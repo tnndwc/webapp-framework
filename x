@@ -1,5 +1,6 @@
 
-
+https://spring.io/guides/gs/spring-boot/
+package && java -jar target/webapp-0.0.1-SNAPSHOT.jar
 
 https://github.com/spring-projects/spring-mvc-showcase
 
