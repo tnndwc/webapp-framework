@@ -1,0 +1,34 @@
+# Server settings (ServerProperties)
+server:
+    port: 8080
+    address: 127.0.0.1
+    #sessionTimeout: 30
+    contextPath: /app
+
+    # Tomcat specifics
+    tomcat:
+        accessLogEnabled: false
+        protocolHeader: x-forwarded-proto
+        remoteIpHeader: x-forwarded-for
+        basedir:
+        backgroundProcessorDelay: 30 # secs
+
+spring:
+    view:
+        prefix: /WEB-INF/jsp/
+        suffix: .jsp
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+#       url: jdbc:mysql://localhost:3306/proddb
+#       username: root
+#       password
+
+security:
+    basic:
+        enabled: false
+    #user:
+    #    name :
+    #    password :
+
+application:
+    message: Hello Boot
