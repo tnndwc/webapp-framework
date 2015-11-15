@@ -31,4 +31,4 @@ security:
     #    password :
 
 application:
-    message: Hello Boot
+    message: JRebel!!

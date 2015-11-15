@@ -34,4 +34,20 @@ public class WelcomeController {
         return "hi";
     }
 
+    @RequestMapping("/hello20")
+    public String hello2(Map<String, Object> model) {
+        System.out.println("=====dd=hello==-nnn--ffff-===nnnn=");
+        model.put("time", new Date());
+        model.put("message", this.message);
+        return "hi";
+    }
+
+    @RequestMapping("/h3-0")
+    public String hello3(Map<String, Object> model) {
+        System.out.println("=====dd=hello==-nnn--ffff-===nnnn=");
+        model.put("time", new Date());
+        model.put("message", this.message + "_AAAAA");
+        return "hi";
+    }
+
 }
