@@ -4,15 +4,21 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&amp;characterEncoding=UTF-8
     username: root
-    password: 
+    password: x_Xj2mew
     driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
 security:
   basic:
     enabled: true
   enable-csrf: true
   headers:
     xss: true
-  ignored: /demo/*, /test/*
+  ignored: /stu/**, /test/*
   user:
     name: hello
     password: world
